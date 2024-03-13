@@ -5,7 +5,7 @@ const mount = (el) => {
   el.innerHTML = cartText;
 }
 
-if (ProcessingInstruction.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'development') {
   const el = document.querySelector('#cart-dev');
 
   // Assuming our container doesnt have an element
